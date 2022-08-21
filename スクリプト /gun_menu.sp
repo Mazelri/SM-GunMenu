@@ -1265,7 +1265,10 @@ public int WeaponTypeMenuHandler(Menu menu, MenuAction action, int param1, int p
         }
         case MenuAction_Cancel:
         {
-            Command_GunMenu(param1, 0);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                Command_GunMenu(param1, 0);
+            }
         }
         case MenuAction_End:
         {
@@ -1378,7 +1381,10 @@ public int SelectMenuHandler(Menu menu, MenuAction action, int param1, int param
         }
         case MenuAction_Cancel:
         {
-            WeaponTypeMenu(param1);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                WeaponTypeMenu(param1);
+            }
         }
         case MenuAction_End:
         {
@@ -1893,7 +1899,10 @@ public int ClientLoadoutMenuHandler(Menu menu, MenuAction action, int param1, in
         }
         case MenuAction_Cancel:
         {
-            Command_GunMenu(param1, 0);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                Command_GunMenu(param1, 0);
+            }
         }
         case MenuAction_End:
         {
@@ -2070,7 +2079,10 @@ public int EditLoadoutHandler(Menu menu, MenuAction action, int param1, int para
         }
         case MenuAction_Cancel:
         {
-            ClientLoadoutMenu(param1);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                ClientLoadoutMenu(param1);
+            }
         }
         case MenuAction_End:
         {
@@ -2197,7 +2209,10 @@ public int ChooseLoadoutHandler(Menu menu, MenuAction action, int param1, int pa
         }
         case MenuAction_Cancel:
         {
-            EditLoadout(param1);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                EditLoadout(param1);
+            }
         }
         case MenuAction_End:
         {
@@ -2308,7 +2323,10 @@ public int ServerSettingMenuHandler(Menu menu, MenuAction action, int param1, in
         }
         case MenuAction_Cancel:
         {
-            Command_GunMenu(param1, 0);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                Command_GunMenu(param1, 0);
+            }
         }
         case MenuAction_End:
         {
@@ -2384,7 +2402,10 @@ public int RestrictTypeMenuHandler(Menu menu, MenuAction action, int param1, int
         }
         case MenuAction_Cancel:
         {
-            ServerSettingMenu(param1);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                ServerSettingMenu(param1);
+            }
         }
         case MenuAction_End:
         {
@@ -2504,7 +2525,10 @@ public int SelectRestrictMenuHandler(Menu menu, MenuAction action, int param1, i
         }
         case MenuAction_Cancel:
         {
-            RestrictMenu(param1);
+            if( param2 == MenuCancel_ExitBack )
+            {
+                RestrictMenu(param1);
+            }
         }
         case MenuAction_End:
         {
